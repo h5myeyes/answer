@@ -1,6 +1,6 @@
 //swiperFather配置
 var swiperFather = new Swiper('.swiper-container-father', {
-    effect : 'flip', //切换效果
+    effect : 'slide', //切换效果
     flipEffect: {
         slideShadows : true,
         limitRotation : true,
