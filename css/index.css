@@ -1,0 +1,280 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+p {
+    margin:0 auto
+} 
+html, body {
+    position: relative;
+    height: 100%;
+}
+body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color:#000;
+    margin: 0;
+    padding: 0;
+}
+/* loading加载页面 */
+.loading {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    background: #fff;
+    z-index: 999;
+}
+.loading img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate3d(-50%,-50%,0);
+    transform: translate3d(-50%,-50%,0);
+}
+/*音乐旋转*/
+.ctrl.on {
+    -webkit-animation: music 5s linear infinite;
+    animation: music 5s linear infinite;
+}
+.ctrl {
+    position: fixed;
+    right: 20px;
+    top: 24px;
+    width: 30px;
+    height: 30px;
+    margin: 0;
+    padding: 0;
+    background: url(../images/page1/close.png) no-repeat 0 0;
+    background-size: 100%;
+    z-index: 100;
+    overflow: hidden;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+}
+.on {
+    background: url(../images/page1/open.png) no-repeat 0 0;
+    background-size: 100%;
+
+
+}
+.swiper-container-father {
+    width: 100%;
+    height: 100%;
+}
+/*-----------------首屏-------------------*/
+.page1 {
+    background-image: url(../images/page1/back.png);
+    background-size: 100%;
+
+}
+.music img{
+    width: 8%;
+    padding: 5% 5% 5% 0;
+}
+.girl {
+    position: absolute;
+    top: 38%;
+    left: 29%;
+}
+.girl img {
+    width: 100%;
+}
+/*弹幕*/
+.barrage {
+    width: 100%;
+    height: 45%;
+    /* border: 1px solid black;
+    background: skyblue; */
+    margin: 50px auto;
+    position: relative;
+    /* overflow: hidden; */
+}
+.barrage img{
+    width: 50%;
+}
+.dmSpan {
+    position: absolute;
+    display: block;
+}
+.crow {
+    margin-top: 32%;
+       
+}
+.crow img{
+    width: 50%;
+    animation: movetm1 20s infinite;
+    -webkit-animation: movetm1 20s infinite;
+    position: relative; 
+}
+@keyframes movetm1 {
+    from {left: 300px;}
+    to {left: -170px;}
+}
+@-webkit-keyframes movetm1 {
+    from {left: 300px;}
+    to {left: -170px;}
+}
+/*二*/
+/* .tm2 {
+    width: 58%;
+    left: -10%;
+    position: absolute;
+    animation: movetm2 5s infinite;
+    -webkit-animation: movetm2 5s infinite;
+}
+@keyframes movetm2 {
+    from {left: 100px;}
+    to {left: -200px;}
+} */
+/*@-webkit-keyframes movetm2 {
+    from {left: 370px;}
+    to {left: -370px;}
+}*/
+/* .tm3 {
+    width: 54%;
+} */
+/*按钮*/
+.btn {
+    position: absolute;
+    bottom: 5%;
+}
+.btn img {
+    width: 54%;
+    top: 0; 
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+/*-----------------     问题    -------------------*/
+.page2 {
+    background-image: url(../images/page2/back.png);
+    background-size: 100%;
+}
+.swiper-container{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+}
+.swiper-container-son {
+    height: 53%;
+    width: 100%;
+    position: absolute;
+    bottom: 17%;
+}
+.questionBack {
+    width: 100%;
+}
+.question {
+    position: relative;
+}
+.tag {
+    width: 24%;
+    position: absolute;
+    top: -11%;
+    left: -1%;
+}
+.title {
+    position: absolute;
+    top: 6%;
+    left: 24%;
+    font-size: 18px;
+    font-weight: bold;
+}
+.option {
+    position: absolute;
+    top: 28%;
+    left: 10%;
+}
+.option p {
+    margin-bottom: 160%;
+    font-size: 18px;
+    position: relative;
+}
+input[type="radio"] {
+    width: 20px;
+    height: 20px;
+    opacity: 0;
+}
+label {
+    position: absolute;
+    left: -5%;
+    top: 12%;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid #999;
+}
+label>span {
+    width: 18.5rem;
+    position: absolute;
+    left: 140%;
+}
+/*设置选中的input的样式*/
+/* + 是兄弟选择器,获取选中后的label元素*/
+input:checked+label { 
+    background-color: #fe6d32;
+    border: 1px solid #fe6d32;
+}
+
+input:checked+label::after {
+    position: absolute;
+    content: "";
+    width: 5px;
+    height: 10px;
+    top: 3px;
+    left: 6px;
+    border: 2px solid #fff;
+    border-top: none;
+    border-left: none;
+    transform: rotate(45deg)
+}
+/*-----------------第三屏-------------------*/
+.page3 {
+    background-image: url(../images/page3/back.png);
+    background-size: 100%;
+}
+.page3Title {
+    position: absolute;
+    top: 6%;
+}
+.page3Title img {
+    width: 55%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.page3Details {
+    position: absolute;
+    top: 13%;
+}
+.page3Details img {
+    width: 77%;
+    margin-left: 14%;
+    margin-right: auto;
+    display: block;
+}
+.call {
+    position: absolute;
+    bottom: 2%;
+}
+.call img {
+    width: 54%;
+    top: 0; 
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}

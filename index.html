@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   	<meta charset="utf-8">
+   	<title>测一测，你是哪种类型的追剧人</title>
+  	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+  <!-- Link Swiper's CSS -->
+  	<link rel="stylesheet" href="./css/swiper.min.css">
+  	<link rel="stylesheet" href="./css/animate.css">
+  	<link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+<div class="loading">
+    <img src="./images/page1/loading.svg">
+</div>
+  <!-- Swiper -->
+<div class="swiper-container swiper-container-father">
+    <div class="swiper-wrapper">
+    	<!-- 第一类 首屏 -->
+      	<div class="swiper-slide page1">
+	      	<!-- 弹幕 -->
+            <div class="barrage"></div>
+            <!-- 女孩 -->
+            <div class="girl">
+                <img src="./images/page1/girl.png">
+            </div>  
+            <!-- 蝴蝶 -->
+	      	<div class="butterfly">
+	      		
+	      	</div>
+	      	<!-- 乌鸦 -->
+	      	<div class="crow">
+	      		<img class="crowAnim" src="./images/page1/crow.png">
+	      	</div>
+	      	<!-- 按钮 -->
+	      	<div class="btn fatherBtn" >
+	      		<img class="animated jackInTheBox" src="./images/page1/btn.png">
+	      	</div>
+      	</div>
+      	<!-- 第二类 问题页7个-->
+      	<div class="swiper-slide page2">
+            <!-- 问题 -->
+            <div class="swiper-container swiper-container-son">
+                <div class="swiper-wrapper optionArr">
+
+                </div>
+            </div>
+            <!-- 按钮 -->
+            <div class="btn sonBtn"></div>
+        </div>
+      	<!-- 第三类 问题分析页4个-->
+      	<div class="swiper-slide page3">
+            <div class="page3Div">
+                <!-- <div class="page3Title">
+                    <img src="./images/page3/title1.png">
+                </div>
+                <div class="page3Details">
+                    <img src="./images/page3/A.png">
+                </div> -->
+
+            </div>
+            <!-- 按钮 -->
+	      	<div class="call" >
+                <img class="animated jackInTheBox" src="./images/page3/call.png">
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 音乐 -->
+<audio src="http://migu.yindudigital.cn/20180727/img/bgmusic.mp3?015445fbbe098a8cf1ab" loop autoplay id="bgmusic"></audio>
+<div class="ctrl on"></div>
+
+<script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script>
+  <!-- Swiper JS -->
+<script src="./js/swiper.min.js"></script>
+<script src="./js/index.js"></script>
+<script src="./json/data.json"></script>
+</body>
+</html>
