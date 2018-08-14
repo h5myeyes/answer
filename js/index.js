@@ -5,6 +5,7 @@ var swiperFather = new Swiper('.swiper-container-father', {
         slideShadows : true,
         limitRotation : true,
     },
+    // autoHeight: true, //高度随内容变化
     direction: 'vertical', //垂直翻页
     onlyExternal : true, //值为true时，slide无法拖动
     // pagination: {
