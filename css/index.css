@@ -29,6 +29,7 @@ body {
     z-index: 999;
 }
 .loading img {
+    width: 20%;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -193,21 +194,21 @@ body {
     left: 10%;
 }
 .option p {
-    margin-bottom: 160%;
+    margin-bottom: 100%;
     font-size: 18px;
     position: relative;
 }
 input[type="radio"] {
-    width: 20px;
-    height: 20px;
+    width: 23px;
+    height: 23px;
     opacity: 0;
 }
 label {
     position: absolute;
     left: -5%;
     top: 12%;
-    width: 20px;
-    height: 20px;
+    width: 23px;
+    height: 23px;
     border-radius: 50%;
     border: 1px solid #999;
 }
@@ -228,8 +229,8 @@ input:checked+label::after {
     content: "";
     width: 5px;
     height: 10px;
-    top: 3px;
-    left: 6px;
+    top: 4px;
+    left: 8px;
     border: 2px solid #fff;
     border-top: none;
     border-left: none;
@@ -273,12 +274,12 @@ input:checked+label::after {
 .recommend img {
     width: 100%;
 }
-.call {
+#call {
     position: absolute;
-    bottom: 2%;
+    bottom: 3%;
 }
-.call img {
-    width: 54%;
+#call img {
+    width: 45%;
     top: 0; 
     bottom: 0;
     left: 0;

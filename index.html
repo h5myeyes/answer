@@ -73,7 +73,7 @@
                 <img src="./images/page3/recommend.png">
             </div>
             <!-- 按钮 -->
-	      	<div class="call" >
+	      	<div id="call" >
                 <img class="animated jackInTheBox" src="./images/page3/call.png">
             </div>
         </div>
@@ -84,7 +84,16 @@
 <div class="ctrl on"></div>
 
 <script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script>
-  <!-- Swiper JS -->
+<script src="http://www.calledt.com/soshm/javascripts/soshm.min.js"></script>
+<script>
+    document.getElementById('call').addEventListener('click', function() {
+          soshm.popIn({
+            title: '弹窗分享',
+            sites: ['weixin', 'weixintimeline', 'weibo', 'yixin', 'qzone', 'tqq', 'qq']
+          });
+        }, false);
+</script>
+<!-- Swiper JS -->
 <script src="./js/swiper.min.js"></script>
 <script src="./js/index.js"></script>
 <script src="./json/data.json"></script>

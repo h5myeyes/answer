@@ -5,7 +5,6 @@ var swiperFather = new Swiper('.swiper-container-father', {
         slideShadows : true,
         limitRotation : true,
     },
-    // autoHeight: true, //高度随内容变化
     direction: 'vertical', //垂直翻页
     onlyExternal : true, //值为true时，slide无法拖动
     // pagination: {
@@ -23,8 +22,6 @@ var swiperSon = new Swiper('.swiper-container-son',{
         slideShadows: false,
         shadowOffset: 20,
         shadowScale: 0.94,
-    },
-    onInit: function (swiper) {
     },
     onTransitionStart: function (swiper) {
         isPage = swiper.activeIndex + 1;
