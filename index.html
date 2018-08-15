@@ -87,11 +87,10 @@
 <script src="http://www.calledt.com/soshm/javascripts/soshm.min.js"></script>
 <script>
     document.getElementById('call').addEventListener('click', function() {
-          soshm.weixinSharetip({
-            title: '弹窗分享',
-            sites: ['weixin', 'weixintimeline', 'weibo', 'yixin', 'qzone', 'tqq', 'qq']
-          });
-        }, false);
+      soshm.popIn({
+        sites: ['weixin', 'weixintimeline', 'weibo', 'yixin', 'qzone', 'tqq', 'tieba', 'douban', 'qq']
+      });
+    }, false);
 </script>
 <!-- Swiper JS -->
 <script src="./js/swiper.min.js"></script>
