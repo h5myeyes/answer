@@ -87,7 +87,7 @@ document.getElementById('call').addEventListener('click', function() {
 }, false);
 //拆礼包
 document.getElementById('gift').addEventListener('click', function() {
-    window.open("http://www.baidu.com")
+    window.open("https://m.miguvideo.com/wap/resource/migu/activity/topic/indexTopic.jsp?nodeId=70060982")
 }, false);
 window.onload = function () {
     $(".loading").css("display","none");
