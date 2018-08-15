@@ -3,28 +3,28 @@ var fixtureDate = {
         "option": [
             {
                 "id": 1,
-                "title": "听到一下哪句对白，你会最激动？",
+                "title": "首先，选择一个你平时追剧的类型",
                 "tag": "./images/page2/tag.png",
                 "answers": [
                     {
                         "number": "A",
-                        "topic": "当然会，必须第一时间发朋友圈啊",
-                        "grade": 4
+                        "topic": "青春偶像剧，逢爱豆新剧必追",
+                        "grade": 5
                     },
                     {
                         "number": "B",
-                        "topic": "看到最后确定是部好剧才会分享",
+                        "topic": "高逼格美剧，只看大制作",
                         "grade": 4
                     },
                     {
                         "number": "C",
-                        "topic": "自己看就行，从不分享",
-                        "grade": 4
+                        "topic": "纪录片，要成为有内涵的人",
+                        "grade": 3
                     },
                     {
                         "number": "D",
-                        "topic": "看心情，有人问起才会说",
-                        "grade": 2
+                        "topic": "其他，涉猎广泛有啥看啥",
+                        "grade": 1
                     }
                 ]       
             },
@@ -63,7 +63,7 @@ var fixtureDate = {
                     {
                         "number": "A",
                         "topic": "笔直坐着",
-                        "grade": 4
+                        "grade": 3
                     },
                     {
                         "number": "B",
@@ -73,7 +73,7 @@ var fixtureDate = {
                     {
                         "number": "C",
                         "topic": "贵妃侧卧",
-                        "grade": 2
+                        "grade": 1
                     },
                     {
                         "number": "D",
@@ -82,141 +82,141 @@ var fixtureDate = {
                     }
                 ]          
             },
-            // {
-            //     "id": 4,
-            //     "title": "看视频时喜欢吃什么？",
-            //     "tag": "./images/page2/tag.png",
-            //     "answers": [
-            //         {
-            //             "number": "A",
-            //             "topic": "辣条",
-            //             "grade": 3
-            //         },
-            //         {
-            //             "number": "B",
-            //             "topic": "薯片",
-            //             "grade": 3
-            //         },
-            //         {
-            //             "number": "C",
-            //             "topic": "红枣枸杞",
-            //             "grade": 2
-            //         },
-            //         {
-            //             "number": "D",
-            //             "topic": "零食？不存在",
-            //             "grade": 1
-            //         }
-            //     ]          
-            // },
-            // {
-            //     "id": 5,
-            //     "title": "你经常和谁一起看视频？",
-            //     "tag": "./images/page2/tag.png",
-            //     "answers": [
-            //         {
-            //             "number": "A",
-            //             "topic": "撸猫/撸狗快乐自由辣条",
-            //             "grade": 3
-            //         },
-            //         {
-            //             "number": "B",
-            //             "topic": "单身狗自己一个人看",
-            //             "grade": 4
-            //         },
-            //         {
-            //             "number": "C",
-            //             "topic": "当然是跟男盆友/女盆友啦",
-            //             "grade": 4
-            //         },
-            //         {
-            //             "number": "D",
-            //             "topic": "佛系，逮到谁跟谁一起看",
-            //             "grade": 2
-            //         }
-            //     ]          
-            // },
-            // {
-            //     "id": 6,
-            //     "title": "听到以下哪句对白，你会最激动",
-            //     "tag": "./images/page2/tag.png",
-            //     "answers": [
-            //         {
-            //             "number": "A",
-            //             "topic": "排山倒海！",
-            //             "grade": 4
-            //         },
-            //         {
-            //             "number": "B",
-            //             "topic": "贱人就是矫情！",
-            //             "grade": 4
-            //         },
-            //         {
-            //             "number": "C",
-            //             "topic": "十里桃林，灼灼芳华！",
-            //             "grade": 4
-            //         },
-            //         {
-            //             "number": "D",
-            //             "topic": "我要让全世界都知道，这个鱼塘被你承包了！",
-            //             "grade": 4
-            //         }
-            //     ]          
-            // },
-            // {
-            //     "id": 7,
-            //     "title": "会不会为了追某部剧开通会员？",
-            //     "tag": "./images/page2/tag.png",
-            //     "answers": [
-            //         {
-            //             "number": "A",
-            //             "topic": "必须的，按年开，几个app都开",
-            //             "grade": 4
-            //         },
-            //         {
-            //             "number": "B",
-            //             "topic": "浪费钱，用朋友的账号就好啦",
-            //             "grade": 1
-            //         },
-            //         {
-            //             "number": "C",
-            //             "topic": "不会，一般只看免费的",
-            //             "grade": 2
-            //         },
-            //         {
-            //             "number": "D",
-            //             "topic": "这一切都取决于最近的手头紧不紧",
-            //             "grade": 3
-            //         }
-            //     ]          
-            // },
-            // {
-            //     "id": 8,
-            //     "title": "看到好看的视频你会推荐给身边的朋友吗",
-            //     "tag": "./images/page2/tag.png",
-            //     "answers": [
-            //         {
-            //             "number": "A",
-            //             "topic": "当然会，必须第一时间发朋友圈啊",
-            //             "grade": 4
-            //         },
-            //         {
-            //             "number": "B",
-            //             "topic": "看到最后确定是部好剧才会分享",
-            //             "grade": 3
-            //         },
-            //         {
-            //             "number": "C",
-            //             "topic": "自己看就行，从不分享",
-            //             "grade": 2
-            //         },
-            //         {
-            //             "number": "D",
-            //             "topic": "看心情，有人问起才会说",
-            //             "grade": 1
-            //         }
-            //     ]          
-            // }
+            {
+                "id": 4,
+                "title": "看视频时喜欢吃什么？",
+                "tag": "./images/page2/tag.png",
+                "answers": [
+                    {
+                        "number": "A",
+                        "topic": "辣条",
+                        "grade": 5
+                    },
+                    {
+                        "number": "B",
+                        "topic": "薯片",
+                        "grade": 3
+                    },
+                    {
+                        "number": "C",
+                        "topic": "红枣枸杞",
+                        "grade": 1
+                    },
+                    {
+                        "number": "D",
+                        "topic": "零食？不存在",
+                        "grade": 2
+                    }
+                ]          
+            },
+            {
+                "id": 5,
+                "title": "你经常和谁一起看视频？",
+                "tag": "./images/page2/tag.png",
+                "answers": [
+                    {
+                        "number": "A",
+                        "topic": "撸猫/撸狗快乐自由辣条",
+                        "grade": 2
+                    },
+                    {
+                        "number": "B",
+                        "topic": "单身狗自己一个人看",
+                        "grade": 3
+                    },
+                    {
+                        "number": "C",
+                        "topic": "当然是跟男盆友/女盆友啦",
+                        "grade": 2
+                    },
+                    {
+                        "number": "D",
+                        "topic": "佛系，逮到谁跟谁一起看",
+                        "grade": 1
+                    }
+                ]          
+            },
+            {
+                "id": 6,
+                "title": "听到以下哪句对白，你会最激动",
+                "tag": "./images/page2/tag.png",
+                "answers": [
+                    {
+                        "number": "A",
+                        "topic": "排山倒海！",
+                        "grade": 5
+                    },
+                    {
+                        "number": "B",
+                        "topic": "贱人就是矫情！",
+                        "grade": 3
+                    },
+                    {
+                        "number": "C",
+                        "topic": "十里桃林，灼灼芳华！",
+                        "grade": 2
+                    },
+                    {
+                        "number": "D",
+                        "topic": "我要让全世界都知道，这个鱼塘被你承包了！",
+                        "grade": 3
+                    }
+                ]          
+            },
+            {
+                "id": 7,
+                "title": "会不会为了追某部剧开通会员？",
+                "tag": "./images/page2/tag.png",
+                "answers": [
+                    {
+                        "number": "A",
+                        "topic": "必须的，按年开，几个app都开",
+                        "grade": 5
+                    },
+                    {
+                        "number": "B",
+                        "topic": "浪费钱，用朋友的账号就好啦",
+                        "grade": 3
+                    },
+                    {
+                        "number": "C",
+                        "topic": "不会，一般只看免费的",
+                        "grade": 2
+                    },
+                    {
+                        "number": "D",
+                        "topic": "这一切都取决于最近的手头紧不紧",
+                        "grade": 1
+                    }
+                ]          
+            },
+            {
+                "id": 8,
+                "title": "看到好看的视频你会推荐给身边的朋友吗",
+                "tag": "./images/page2/tag.png",
+                "answers": [
+                    {
+                        "number": "A",
+                        "topic": "当然会，必须第一时间发朋友圈啊",
+                        "grade": 5
+                    },
+                    {
+                        "number": "B",
+                        "topic": "看到最后确定是部好剧才会分享",
+                        "grade": 3
+                    },
+                    {
+                        "number": "C",
+                        "topic": "自己看就行，从不分享",
+                        "grade": 2
+                    },
+                    {
+                        "number": "D",
+                        "topic": "看心情，有人问起才会说",
+                        "grade": 1
+                    }
+                ]          
+            }
         ],
         "result": [
             {

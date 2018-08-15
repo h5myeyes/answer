@@ -1,6 +1,13 @@
 * {
     padding: 0;
     margin: 0;
+    /* moz-user-select: -moz-none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none; */
 }
 p {
     margin:0 auto
@@ -167,7 +174,7 @@ body {
     bottom: 17%;
 }
 .questionBack {
-    width: 95%;
+    width: 92%;
     margin-left: auto;
     margin-right: auto;
     display: block;
@@ -184,7 +191,7 @@ body {
 .title {
     position: absolute;
     top: 6%;
-    left: 24%;
+    left: 20%;
     font-size: 18px;
     font-weight: bold;
 }
@@ -268,11 +275,18 @@ input:checked+label::after {
 }
 .recommend {
     position: absolute;
-    bottom: 0%;
+    bottom: -1%;
     z-index: 0;
 }
 .recommend img {
     width: 100%;
+}
+#gift{
+    position: absolute;
+    width: 30%;
+    height: 11%;
+    right: 0;
+    bottom: 17%;
 }
 #call {
     position: absolute;

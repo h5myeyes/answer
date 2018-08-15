@@ -7,21 +7,15 @@ var swiperFather = new Swiper('.swiper-container-father', {
     },
     direction: 'vertical', //垂直翻页
     onlyExternal : true, //值为true时，slide无法拖动
-    // pagination: {
-    //     el: '.swiper-container-father',
-    //     clickable: true,
-    // },
 });
 //swiperSon配置
 var swiperSon = new Swiper('.swiper-container-son',{
     effect: 'cube',
     grabCursor: true,
     onlyExternal : true,
-    cubeEffect: {
+    cube: {
         shadow: false,
-        slideShadows: false,
-        shadowOffset: 20,
-        shadowScale: 0.94,
+        slideShadows: false
     },
     onTransitionStart: function (swiper) {
         isPage = swiper.activeIndex + 1;
@@ -76,7 +70,16 @@ var total;
 var isPage;
 //答题得分数组
 var gradeArr = [];
-
+//分享
+document.getElementById('call').addEventListener('click', function() {
+    soshm.popIn({
+        sites: ['weixin', 'weixintimeline', 'weibo', 'tqq', 'tieba', 'douban']
+    });
+}, false);
+//拆礼包
+document.getElementById('gift').addEventListener('click', function() {
+    window.open("http://www.baidu.com")
+}, false);
 window.onload = function () {
     $(".loading").css("display","none");
 	//翻下一页
