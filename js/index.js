@@ -73,6 +73,15 @@ var gradeArr = [];
 //分享
 document.getElementById('call').addEventListener('click', function() {
     soshm.popIn({
+        // 分享的链接，默认使用location.href
+        url: 'https://h5myeyes.github.io/answer/index.html',
+        // 分享的标题，默认使用document.title
+        title: '测一测，你是哪种类型的追剧人',
+        // 分享的摘要，默认使用<meta name="description" content="">content的值
+        digest: '寻找自己鲜为人知的一面',
+        // 分享的图片，默认获取本页面第一个img元素的src
+        pic: 'https://h5myeyes.github.io/answer/images/page2/tag.png',
+        // 默认显示的网站为以下六个个,支持设置的网站有
         sites: ['weixin', 'weixintimeline', 'weibo', 'tqq', 'tieba', 'douban']
     });
 }, false);

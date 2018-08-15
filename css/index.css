@@ -1,13 +1,13 @@
 * {
     padding: 0;
     margin: 0;
-    /* moz-user-select: -moz-none;
+    moz-user-select: -moz-none;
     -moz-user-select: none;
     -o-user-select: none;
     -khtml-user-select: none;
     -webkit-user-select: none;
     -ms-user-select: none;
-    user-select: none; */
+    user-select: none;
 }
 p {
     margin:0 auto
@@ -149,7 +149,7 @@ body {
 }
 /*-----------------第二屏-------------------*/
 .txt {
-    margin-top: 16%;
+    margin-top: 10%;
 }
 .txt img {
     width: 75%;
@@ -194,6 +194,7 @@ body {
     left: 20%;
     font-size: 18px;
     font-weight: bold;
+    width: 17rem;
 }
 .option {
     position: absolute;
@@ -220,7 +221,7 @@ label {
     border: 1px solid #999;
 }
 label>span {
-    width: 18.5rem;
+    width: 17.5rem;
     position: absolute;
     left: 140%;
 }
@@ -250,7 +251,7 @@ input:checked+label::after {
 }
 .page3Title {
     position: absolute;
-    top: 5%;
+    top: 3%;
 }
 .page3Title img {
     width: 55%;
@@ -264,7 +265,7 @@ input:checked+label::after {
 }
 .page3Details {
     position: absolute;
-    top: 14%;
+    top: 11%;
     z-index: 9;
 }
 .page3Details img {
@@ -275,7 +276,7 @@ input:checked+label::after {
 }
 .recommend {
     position: absolute;
-    bottom: -1%;
+    bottom: -2%;
     z-index: 0;
 }
 .recommend img {
