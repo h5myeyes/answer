@@ -89,6 +89,7 @@ document.getElementById('call').addEventListener('click', function() {
         sites: ['weixin', 'weixintimeline', 'weibo', 'tqq', 'tieba', 'douban']
     });
 }, false);
+
 //拆礼包
 document.getElementById('gift').addEventListener('click', function() {
     window.open("https://m.miguvideo.com/wap/resource/migu/activity/topic/indexTopic.jsp?nodeId=70060982")
@@ -157,10 +158,12 @@ window.onload = function () {
         });
         swiperSon.appendSlide(fatherData);
     }
+    
     //答题数组
     function putRadioVal () {
         for (var i = 1; i <= total; i++) {
             $(document).on('change', 'input[name="item_'+ i +'"]:radio', function(){
+                $(this).parents('p').children('input').eq(0).prop('checked',true);
                 let arrNum = $(this)[0].name.substr($(this)[0].name.length-1,1);
                 //获取到答题数组gradeArr
                 gradeArr[arrNum - 1] = $(this).val()

@@ -14,12 +14,18 @@ input,textarea {
     padding: 0px;
     outline: none;
 }
+input:focus  {
+    -webkit-box-shadow: 0 0 0 #fff;
+    -moz-box-shadow:0 0 0 #fff;
+}  
 p {
     margin:0 auto
 } 
 html, body {
     position: relative;
     height: 100%;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
     background: #eee;
@@ -221,7 +227,7 @@ body {
 input[type="radio"] {
     width: 36px;
     height: 38px;
-    /* opacity: 0; */
+    opacity: 0;
 }
 label {
     position: absolute;
