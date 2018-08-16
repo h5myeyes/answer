@@ -21,6 +21,14 @@ var swiperSon = new Swiper('.swiper-container-son',{
         isPage = swiper.activeIndex + 1;
     }
 });
+
+//声明_czc对象:
+var _czc = _czc || [];
+//绑定siteid，请用您的siteid替换下方"XXXXXXXX"部分
+_czc.push(["_setAccount", "1274469920"]);
+var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cspan id='cnzz_stat_icon_1274469920'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s13.cnzz.com/z_stat.php%3Fid%3D1274469920%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));
+
 //音乐自动播放
 document.addEventListener('DOMContentLoaded', function () {
   	function audioAutoPlay() {
@@ -88,13 +96,17 @@ document.getElementById('call').addEventListener('click', function() {
         // 默认显示的网站为以下六个个,支持设置的网站有
         sites: ['weixin', 'weixintimeline', 'weibo', 'tqq', 'tieba', 'douban']
     });
+    _czc.push(['_trackEvent', '测一测，你是哪种类型的追剧人', '点击分享按钮']);
+    
 }, false);
 
 //拆礼包
 document.getElementById('gift').addEventListener('click', function() {
-    window.open("https://m.miguvideo.com/wap/resource/migu/activity/topic/indexTopic.jsp?nodeId=70060982")
+    window.open("https://m.miguvideo.com/wap/resource/migu/activity/topic/indexTopic.jsp?nodeId=70060982");
+    _czc.push(['_trackEvent', '测一测，你是哪种类型的追剧人', '点击拆礼包按钮']);
 }, false);
 window.onload = function () {
+    _czc.push(['_trackEvent', '测一测，你是哪种类型的追剧人', '进入页面']);
     //分享信息
     if ($.is_weixn()){
         $.weixinSecondShare(shareTitle, shareDesc, imgUrl);
@@ -109,6 +121,7 @@ window.onload = function () {
     	swiperFather.slideNext(true, 1000);
         //swiperSon下一题
         nextBackPng ();
+        _czc.push(['_trackEvent', '测一测，你是哪种类型的追剧人', '点我立即测试']);
     });
   	// 音乐播放
   	var music = $("#bgmusic").get(0);
@@ -117,11 +130,13 @@ window.onload = function () {
   		music.paused ? music.play() : music.pause();
   	}), $(music).on("play pause", function (t) {
   		switch (t.type) {
-  			case "play":
-  				onOff.addClass("on");
+              case "play":
+                    onOff.addClass("on");
+                    _czc.push(['_trackEvent', '测一测，你是哪种类型的追剧人', '打开音乐']);
   				break;
   			case "pause":
-  				onOff.removeClass("on");
+                    onOff.removeClass("on");
+                    _czc.push(['_trackEvent', '测一测，你是哪种类型的追剧人', '关闭音乐']);
   		}
   	});
 
@@ -163,7 +178,11 @@ window.onload = function () {
     function putRadioVal () {
         for (var i = 1; i <= total; i++) {
             $(document).on('change', 'input[name="item_'+ i +'"]:radio', function(){
+                //js控制input点击
                 $(this).parents('p').children('input').eq(0).prop('checked',true);
+                // console.info($(this).parents('p').find('span').text())
+                _czc.push(['_trackEvent', '点击的答案', $(this).parents('p').find('span').text()]);
+
                 let arrNum = $(this)[0].name.substr($(this)[0].name.length-1,1);
                 //获取到答题数组gradeArr
                 gradeArr[arrNum - 1] = $(this).val()
@@ -183,16 +202,21 @@ window.onload = function () {
     function nextPng () {
         let sonBtn = '<img class="animated tada sonNextBtn" src="./images/page2/next.png">'
         $(".sonBtn").html(sonBtn);
+        _czc.push(['_trackEvent', '测一测，你是哪种类型的追剧人', '点击进入下一题按钮']);
     }
     //禁点下一题
     function nextBackPng () {
         let sonBtn = '<img src="./images/page2/nextBack.png">'
         $(".sonBtn").html(sonBtn);
+        _czc.push(['_trackEvent', '测一测，你是哪种类型的追剧人', '点击禁止进入下一题按钮']);
+        
     }
     //获取结果
     function resultPng () {
         let sonBtn = '<img class="animated tada resultBtn" src="./images/page2/result.png">'
         $(".sonBtn").html(sonBtn);
+        _czc.push(['_trackEvent', '测一测，你是哪种类型的追剧人', '点击获取结果按钮']);
+        
     }
     //更换下一题按钮
     function changBtn () {
@@ -242,3 +266,4 @@ window.onload = function () {
     getOption ();
     putRadioVal ();
 }
+
