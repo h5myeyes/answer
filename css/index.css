@@ -233,8 +233,8 @@ label {
     position: absolute;
     left: 30%;
     top: 12%;
-    width: 23px;
-    height: 23px;
+    width: 25px;
+    height: 25px;
     border-radius: 50%;
     border: 1px solid #999;
 }
@@ -254,9 +254,9 @@ input:checked+label::after {
     position: absolute;
     content: "";
     width: 5px;
-    height: 10px;
+    height: 12px;
     top: 4px;
-    left: 8px;
+    left: 9px;
     border: 2px solid #fff;
     border-top: none;
     border-left: none;
