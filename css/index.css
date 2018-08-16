@@ -235,7 +235,7 @@ label {
 label>span {
     width: 17.5rem;
     position: absolute;
-    left: 140%;
+    padding-left: 140%;
 }
 /*设置选中的input的样式*/
 /* + 是兄弟选择器,获取选中后的label元素*/
