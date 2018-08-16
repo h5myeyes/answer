@@ -70,6 +70,10 @@ var total;
 var isPage;
 //答题得分数组
 var gradeArr = [];
+var imgUrl = 'https://h5myeyes.github.io/answer/images/page2/tag.png';
+var shareTitle = '测一测，你是哪种类型的追剧人';
+var shareDesc = '找出自己鲜为人知的一面';
+
 //分享
 document.getElementById('call').addEventListener('click', function() {
     soshm.popIn({
@@ -90,6 +94,12 @@ document.getElementById('gift').addEventListener('click', function() {
     window.open("https://m.miguvideo.com/wap/resource/migu/activity/topic/indexTopic.jsp?nodeId=70060982")
 }, false);
 window.onload = function () {
+    //分享信息
+    if ($.is_weixn()){
+        $.weixinSecondShare(shareTitle, shareDesc, imgUrl);
+    }
+  
+    //隐藏loading
     $(".loading").css("display","none");
 	//翻下一页
     $('.fatherBtn').click(function(){
@@ -139,6 +149,7 @@ window.onload = function () {
                     <img class="questionBack" src="./images/page2/paper.png">\
                     <div class="">\
                         <img class="tag" src=' + val.tag + '>\
+                        <span class="qNum">' + val.qn + '</span>\
                         <p class="title">' + val.title + '</p>\
                         <div class="option">' + sonData + '</div>\
                     </div>\

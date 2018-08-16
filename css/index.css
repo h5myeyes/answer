@@ -188,6 +188,13 @@ body {
     top: -11%;
     left: -1%;
 }
+.qNum {
+    font-family: 汉仪方墨体简;
+    font-size: 20px;
+    position: absolute;
+    top: 2%;
+    left: 5%;
+}
 .title {
     position: absolute;
     top: 6%;
@@ -202,13 +209,13 @@ body {
     left: 10%;
 }
 .option p {
-    margin-bottom: 100%;
+    margin-bottom: 28%;
     font-size: 18px;
     position: relative;
 }
 input[type="radio"] {
     width: 23px;
-    height: 23px;
+    height: 38px;
     opacity: 0;
 }
 label {

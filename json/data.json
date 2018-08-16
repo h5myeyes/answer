@@ -5,6 +5,7 @@ var fixtureDate = {
                 "id": 1,
                 "title": "首先，选择一个你平时追剧的类型",
                 "tag": "./images/page2/tag.png",
+                "qn": "Q1",
                 "answers": [
                     {
                         "number": "A",
@@ -32,6 +33,7 @@ var fixtureDate = {
                 "id": 2,
                 "title": "一般选择什么时候追剧看视频？",
                 "tag": "./images/page2/tag.png",
+                "qn": "Q2",
                 "answers": [
                     {
                         "number": "A",
@@ -59,6 +61,7 @@ var fixtureDate = {
                 "id": 3,
                 "title": "看视频时最喜欢的姿势是什么？",
                 "tag": "./images/page2/tag.png",
+                "qn": "Q3",
                 "answers": [
                     {
                         "number": "A",
@@ -86,6 +89,7 @@ var fixtureDate = {
                 "id": 4,
                 "title": "看视频时喜欢吃什么？",
                 "tag": "./images/page2/tag.png",
+                "qn": "Q4",
                 "answers": [
                     {
                         "number": "A",
@@ -113,6 +117,7 @@ var fixtureDate = {
                 "id": 5,
                 "title": "你经常和谁一起看视频？",
                 "tag": "./images/page2/tag.png",
+                "qn": "Q5",
                 "answers": [
                     {
                         "number": "A",
@@ -140,6 +145,7 @@ var fixtureDate = {
                 "id": 6,
                 "title": "听到以下哪句对白，你会最激动",
                 "tag": "./images/page2/tag.png",
+                "qn": "Q6",
                 "answers": [
                     {
                         "number": "A",
@@ -167,6 +173,7 @@ var fixtureDate = {
                 "id": 7,
                 "title": "会不会为了追某部剧开通会员？",
                 "tag": "./images/page2/tag.png",
+                "qn": "Q7",
                 "answers": [
                     {
                         "number": "A",
@@ -194,6 +201,7 @@ var fixtureDate = {
                 "id": 8,
                 "title": "看到好看的视频你会推荐给身边的朋友吗",
                 "tag": "./images/page2/tag.png",
+                "qn": "Q8",
                 "answers": [
                     {
                         "number": "A",
