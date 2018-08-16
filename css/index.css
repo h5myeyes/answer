@@ -120,8 +120,8 @@ body {
 }
 .crow img{
     width: 50%;
-    animation: movetm1 20s infinite;
-    -webkit-animation: movetm1 20s infinite;
+    animation: movetm1 15s infinite;
+    -webkit-animation: movetm1 15s infinite;
     position: relative; 
 }
 @keyframes movetm1 {
@@ -149,7 +149,7 @@ body {
 }
 /*-----------------第二屏-------------------*/
 .txt {
-    margin-top: 10%;
+    margin-top: 5%;
 }
 .txt img {
     width: 75%;
@@ -171,7 +171,7 @@ body {
     height: 50%;
     width: 100%;
     position: absolute;
-    bottom: 17%;
+    bottom: 22%;
 }
 .questionBack {
     width: 92%;
